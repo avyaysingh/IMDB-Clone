@@ -9,7 +9,7 @@ document
     // console.log(`I'm searching for : ${searchingFor}`);
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?s=${searchingFor}&apikey=8b37b1c`
+        `https://www.omdbapi.com/?s=${searchingFor}&apikey=8b37b1c`
       );
       const data = await response.json();
       // console.log(data);
@@ -77,7 +77,7 @@ async function displayMovieDetails() {
   const isFavourite = favourites.includes(imdbID); // Checking if the movie is in the favorites list
   try {
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${imdbID}&apikey=8b37b1c`
+      `https://www.omdbapi.com/?i=${imdbID}&apikey=8b37b1c`
     );
 
     const movie = await response.json();
@@ -135,7 +135,7 @@ async function loadFavouriteMovies() {
 
   favourites.forEach((imdbID) => {
     //will iterate over the favourites array and displays the movies in favourites
-    fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=8b37b1c`)
+    fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=8b37b1c`)
       .then((response) => response.json())
       .then((movie) => {
         const movieCard = document.createElement("li");
