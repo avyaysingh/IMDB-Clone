@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/29ad6f6f1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieSearch</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">MovieSearch</div>
+      <a href="index.html" class="home-link">Home</a>
+    </div>
+    <div class="container">
+      <input
+        type="text"
+        id="search-input"
+        class="search-box"
+        placeholder="Search for a movie..."
+      />
+      <ul id="search-results" class="movie-list">
+        <!-- Search results will be displayed here using javascript-->
+      </ul>
+      <ul id="favourites-list" class="favourites-list">
+
+        <!-- Favourite movies that will be displayed here, i've generated using javascript -->
+        
+        <!-- <img src="${movie.Poster}" alt="${movie.title}" class="movie-poster" />
+        <div class="movie-info">
+          <h3 class="movie-title">${movie.Title}</h3>
+          <p class="movie-year">${movie.Year}</p>
+          <p class="movie-rating">${movie.imdbRating}</p>
+          <div
+            class="favourite-icon"
+            onclick="toggleFavourite(event, '${movie.imdbID}')"
+          >
+            <i class="fas fa-heart"></i>
+          </div>
+        </div> -->
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
